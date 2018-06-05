@@ -1,0 +1,14 @@
+<div>
+  <div class="activity-desc">
+    <h5>{{ item.address }}</h5>
+    <h6>{{ item.phone }}</h6>
+  </div>
+  <div class="activity-img">
+    <ul>
+      <li *ngIf="item.img">
+        <img [src]="item.img" />
+      </li>
+    </ul>
+  </div>
+  <div class="clear"> </div>
+</div>

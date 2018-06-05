@@ -19,8 +19,4 @@ export class AppComponent {
     this.currentPlace = place;
   }
 
-  public chooseType(type: string): void {
-    this.currentType = type;
-  }
-
 }

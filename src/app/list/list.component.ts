@@ -2,11 +2,11 @@ import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { IPlace } from '../places';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  selector: 'app-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
-export class MenuComponent {
+export class ListComponent {
 
   @Input()
   public list: IPlace[];
@@ -17,15 +17,14 @@ export class MenuComponent {
   @Output()
   public chooseType: EventEmitter<string> = new EventEmitter();
 
-  public types: string[] = ['Hotel', 'Fishing', 'Tours', 'Weather'];
+  public currentType: string;
 
   public onClick(item: IPlace): void {
     this.choose.emit(item);
   }
 
   public onTypeClick(type: string): void {
-    console.log(type);
-    this.chooseType.emit(type);
+    this.currentType = type;
   }
 
 }

@@ -1,11 +1,10 @@
 <h1>Hot Weather Widget</h1>
 <div class="element">
 		<div class="element-left">
-      <app-menu 
-        [list] = "places | async | placesFilter:currentType" 
+      <app-list 
+        [list] = "places" 
         (choose)="chooseItem($event)"
-        (chooseType)="chooseType($event)"
-        ></app-menu>
+        ></app-list>
 	  </div>
 		<div class="element-right">
       <app-weather [place]="currentPlace"></app-weather>
