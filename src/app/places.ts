@@ -27,7 +27,7 @@ export interface IPlace {
 
 const data: IPlace[] = [
   {
-    img: '/assets/images/r1.jpg',
+    img: 'assets/images/r1.jpg',
     address: 'Test Road, 1',
     phone: 12345,
     weather: {
@@ -38,14 +38,14 @@ const data: IPlace[] = [
     },
     social_info: {
       title: 'harum debitis quasi',
-      img: '/assets/images/r1.jpg',
+      img: 'assets/images/r1.jpg',
       followers: 10,
       following: 5
     },
     type: 'Fishing'
   },
   {
-    img: '/assets/images/res.jpg',
+    img: 'assets/images/res.jpg',
     address: 'Hello World, 2',
     phone: 777888999,
     weather: {
@@ -56,14 +56,14 @@ const data: IPlace[] = [
     },
     social_info: {
       title: 'alias non quos quas',
-      img: '/assets/images/b1.jpg',
+      img: 'assets/images/b1.jpg',
       followers: 1000,
       following: 50
     },
     type: 'Tours'
   },
   {
-    img: '/assets/images/r1.jpg',
+    img: 'assets/images/r1.jpg',
     address: 'Somwhere, 3',
     phone: 111111000,
     weather: {
@@ -74,7 +74,7 @@ const data: IPlace[] = [
     },
     social_info: {
       title: 'Aut sit sed consequatur',
-      img: '/assets/images/r1.jpg',
+      img: 'assets/images/r1.jpg',
       followers: 800,
       following: 200
     },
